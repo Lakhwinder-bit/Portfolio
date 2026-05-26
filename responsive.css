@@ -4,11 +4,13 @@
   gap: 50px;
 top: 10%;
 margin-bottom: 50px;
+flex-wrap: wrap;
 
 }
 .right-side{
     max-width: 100%;
 }
+
 }
 
 
@@ -43,17 +45,18 @@ height:160px;
   gap: 20px;
 top: 4%;
 margin-bottom: 50px;
-padding: 20px 25px;
+padding: 20px 15px;
 
 }
 
 .right-side h2{
-    font-size: 28px;
+    font-size: 24px;
     letter-spacing: 1px;
 }
 .right-side h3{
     padding-top: 5px;
-    font-size: 16px;
+    font-size: 13px;
+    padding-bottom: 5px;
    
 }
 .section-heading {
@@ -81,5 +84,7 @@ nav{
     font-size: 10px;
     padding: 10px 15px;
 }
-
+.card .detaile-project{
+    display: none;
+}
 }
