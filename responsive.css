@@ -74,6 +74,9 @@ padding: 20px 15px;
 nav{
     padding: 15px 20px;
 }
+.left-side img{
+    max-width: 100%;
+}
 }
 @media(max-width:630px){
 .nav-email{
