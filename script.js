@@ -238,11 +238,11 @@ scrub: 1.5,
 let lastScroll = 0;
 
 window.addEventListener("scroll",()=>{
-console.log(window.scrollY);
+// console.log(window.scrollY);
 let current = window.scrollY;
 
 let nav =
-document.querySelector("#navbar");
+document.querySelector(".nav");
 
 if(current > lastScroll){
 
@@ -258,3 +258,84 @@ lastScroll = current;
 
 });
 
+
+
+// ── Nav Dropdown "Get in touch" ──────────────────────────────
+
+const touchBtn =
+document.querySelector(".btn-touch");
+
+const touchBox =
+document.querySelector(".touch-box");
+
+const touchMenu =
+document.querySelector(".touch-menu");
+
+let isOpen = false;
+
+/* initial state */
+
+gsap.set(touchMenu, {
+opacity: 0,
+y: -20,
+scale: 0.95,
+display: "none"
+});
+
+touchBtn.addEventListener("click",(e)=>{
+ console.log()
+e.preventDefault();
+
+if(!isOpen){
+
+touchBox.classList.add("active");
+
+gsap.set(touchMenu,{
+display:"flex"
+});
+
+gsap.to(touchMenu,{
+
+opacity:1,
+
+y:0,
+
+scale:1,
+
+duration:0.45,
+
+ease:"power3.out"
+
+});
+
+}else{
+
+gsap.to(touchMenu,{
+
+opacity:0,
+
+y:-20,
+
+scale:0.95,
+
+duration:0.35,
+
+ease:"power3.in",
+
+onComplete:()=>{
+
+touchBox.classList.remove("active");
+
+gsap.set(touchMenu,{
+display:"none"
+});
+
+}
+
+});
+
+}
+
+isOpen = !isOpen;
+
+});

@@ -1,0 +1,85 @@
+
+@media(max-width:800px){
+.card{
+  gap: 50px;
+top: 10%;
+margin-bottom: 50px;
+
+}
+.right-side{
+    max-width: 100%;
+}
+}
+
+
+
+
+@media(max-width:600px){
+
+.hero h1{
+
+font-size:1.9rem;
+
+}
+.hero{
+    padding: 20px 20px;
+}
+
+.small-img{
+
+width:180px;
+
+height:160px;
+
+}
+
+.tag .ti { font-size: 12px; height: 15px; }
+
+.t1 { top: 14%; left: 5%; }
+.t2 { top: 20%; right: 5%; }
+.t3 { bottom: 24%; left: 4%; }
+.t4 { bottom: 10%; right: 5%; }
+.card{
+  gap: 20px;
+top: 4%;
+margin-bottom: 50px;
+padding: 20px 25px;
+
+}
+
+.right-side h2{
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+.right-side h3{
+    padding-top: 5px;
+    font-size: 16px;
+   
+}
+.section-heading {
+    font-size: 2rem;
+}
+.info-card {
+    max-width: 100%;
+}
+.info-cards {
+  padding: 0px 30px;
+}
+.projects{
+    margin: 0px 20px;
+}
+nav{
+    padding: 15px 20px;
+}
+}
+@media(max-width:630px){
+.nav-email{
+    display: none;
+}
+
+.main-btn{
+    font-size: 10px;
+    padding: 10px 15px;
+}
+
+}

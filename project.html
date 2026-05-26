@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Satoshi:wght@300;400;500&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="responsive.css">
 </head>
 <body>
 
@@ -15,30 +16,96 @@
   <div id="cur"></div>
   <div id="cur-ring"></div>
 
-  <!-- nav -->
-  <nav class="nav ">
-    <span class="nav-name">Lakhwinder Singh</span>
-    <div class="nav-right">
-      <div class="nav-email">
-        email: <span>singhlakhiwinder3@gmail.com</span>
-        <div class="copy-icon" id="copyBtn">⧉</div>
-      </div>
-      <a class="btn-touch" href="mailto:bousrih20@gmail.com">
-        Get in touch <span class="arr">↗</span>
-      </a>
-    </div>
-  </nav>
+<nav class="nav">
+
+<span class="nav-name">
+Lakhwinder Singh
+</span>
+
+<div class="nav-right">
+
+<div class="nav-email">
+email:
+<span>singhlakhiwinder3@gmail.com</span>
+
+<div class="copy-icon" id="copyBtn">
+⧉
+</div>
+</div>
+
+<!-- dropdown -->
+
+<div class="touch-box">
+
+<button class="btn-touch">
+
+Get in touch
+
+<span class="arr">
+↗
+</span>
+
+</button>
+
+<div class="touch-menu">
+
+<a href="mailto:singhlakhiwinder3@gmail.com">
+<div class="icon-name">
+ <svg fill="#000000" viewBox="0 0 1920 1920" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M1920 428.266v1189.54l-464.16-580.146-88.203 70.585 468.679 585.904H83.684l468.679-585.904-88.202-70.585L0 1617.805V428.265l959.944 832.441L1920 428.266ZM1919.932 226v52.627l-959.943 832.44L.045 278.628V226h1919.887Z" fill-rule="evenodd"></path> </g></svg>Email </div>
+
+<span>↗</span>
+
+</a>
+
+<a href="#">
+  <div class="icon-name"><svg viewBox="0 0 48 48" version="1.1" id="Shopicons" xmlns="http://www.w3.org/2000/svg" x="0" y="0" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style>.st1{fill:#fff}.st2,.st3{fill:none;stroke:#666;stroke-width:4;stroke-miterlimit:10}.st3{stroke-width:6}</style> <g id="github_00000178918564504449926280000008731996709616696990_"> <path d="M0 .011h48v48H0v-48z" fill="none"></path> <path d="M30 44.004v-10c0-.884-.197-1.722-.542-2.479.825-.167 1.65-.358 2.472-.601 2.527-.746 6.154-3.839 7.226-6.863 1.188-3.356 1.188-6.76 0-10.116l-.001-.001c-.213-.603-.537-1.211-.998-1.868.848-3.154.253-5.792.225-5.915l-.365-1.564-1.606.019c-.15.002-3.48.063-6.724 1.955a29.635 29.635 0 0 0-11.371 0c-3.243-1.892-6.573-1.953-6.724-1.955l-1.608-.019-.365 1.564c-.028.123-.623 2.761.225 5.915-.461.657-.785 1.266-.999 1.869-1.187 3.356-1.187 6.76.001 10.117 1.07 3.023 4.697 6.116 7.225 6.862.822.243 1.647.434 2.472.601A5.946 5.946 0 0 0 18 34.004v1.281c-.062.036-.127.065-.187.108-.289.211-2.869 1.967-5.505.09-.93-.946-1.386-1.639-1.826-2.309-.988-1.5-1.841-2.586-4.588-3.96a2 2 0 1 0-1.789 3.579c1.991.995 2.341 1.525 3.035 2.581.515.781 1.155 1.754 2.445 3.044l.215.186c1.692 1.27 3.447 1.723 5.053 1.723A9.286 9.286 0 0 0 18 39.76v4.253l12-.009z"></path> </g> </g></svg>
+  GitHub</div>
+
+
+
+<span>↗</span>
+
+</a>
+
+<a href="#">
+<div class="icon-name">
+<svg fill="#000000" height="200px" width="200px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M329,145h-432c-22.1,0-40,17.9-40,40v432c0,22.1,17.9,40,40,40h432c22.1,0,40-17.9,40-40V185C369,162.9,351.1,145,329,145z M41.4,508.1H-8.5V348.4h49.9V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7 c18.4,0,29.7,11.9,30.1,27.7C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4 c-14.9,0-23.2,10-27,19.6c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6 c35.5,0,63.3,23,63.3,72.4V508.1z"></path> </g></svg>LinkedIn</div>
+<span>↗</span>
+
+</a>
+
+<a href="#">
+
+
+<div class="icon-name"><svg fill="#000000" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>profile1</title> <path d="M23 11.031c0-0.553-0.448-1-1-1h-3c0 0 0.033-1.204 0.033-2.954 0-1.625-1.346-3.108-3.033-3.108s-2.988 1.411-2.988 3.099c0 1.625-0.012 2.964-0.012 2.964h-3c-0.553 0-1 0.447-1 1 0 0.552 0 1.938 0 1.938h14c0-0.001 0-1.387 0-1.939zM16 8.969c-0.553 0-1-0.448-1-1 0-0.553 0.447-1 1-1 0.552 0 1 0.447 1 1s-0.448 1-1 1zM28 11.031l-4-0.062 0.021 3.104h-16.021v-2.979l-4-0.062c-1.104 0-2 0.896-2 2v14c0 1.104 0.896 2 2 2h24c1.104 0 2-0.896 2-2v-14c0-1.105-0.896-2.001-2-2.001zM10 16.844c1.208 0 2.188 1.287 2.188 2.875s-0.98 2.875-2.188 2.875-2.188-1.287-2.188-2.875 0.98-2.875 2.188-2.875zM5.667 25.979c0 0 0.237-1.902 0.776-2.261s2.090-0.598 2.090-0.598 1.006 1.075 1.434 1.075c0.427 0 1.433-1.075 1.433-1.075s1.552 0.238 2.091 0.598c0.633 0.422 0.791 2.261 0.791 2.261h-8.615zM26 25.031h-9v-1h9v1zM26 23.031h-9v-1h9v1zM26 21.031h-9v-1h9v1zM26 19.031h-9v-1h9v1z"></path> </g></svg> Resume</div>
+
+<span>↗</span>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</nav>
 
  
-  <!-- hero -->
+    <!-- hero -->
   <section class="hero">
-  <h1 class="big-name">My previes Work
+    <p>HELLO 👋</p>
+  <h1 class="big-name">
+   Things I've Built
+<span class="small-text-hadding"> </span>
+<br>
 
+Turning ideas into real digital  <span>experiences.</span>
+
+<br>
     </h1>
-    <p class="sub-text">
-   
-Crafting <strong>experiences </strong>through code.
-    </p>
+     
+
     <div class="avail">
       <span class="avail-dot"></span>
       available for work
@@ -417,10 +484,9 @@ and deploy the final product.
 
   <!-- bottom nav -->
   <div class="bottom-bar" id="bottomBar">
-    <a  href="index.html" class="nav-tab active" href="#"><span class="tab-icon">☰</span> home</a>
+    <a  href="index.html" class="nav-tab active" href=""><span class="tab-icon">☰</span> home</a>
     <a  href="project.html" class="nav-tab" href="#">projects</a>
     <a  href="about.html" class="nav-tab" href="#">About</a>
-    <a  href="pricing.html" class="nav-tab" href="#">pricing</a>
     <div class="page-reveal"></div>
   </div>
 
