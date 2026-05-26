@@ -242,7 +242,7 @@ console.log(window.scrollY);
 let current = window.scrollY;
 
 let nav =
-document.querySelector(".nav");
+document.querySelector("#navbar");
 
 if(current > lastScroll){
 
@@ -257,3 +257,4 @@ nav.classList.remove("hide");
 lastScroll = current;
 
 });
+
