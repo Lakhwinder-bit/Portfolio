@@ -803,7 +803,14 @@ grid-template-columns: 1fr 1fr;
   font-weight: 600;
   margin-bottom:5px;
 }
-
+a{
+  text-decoration: none;
+}
+.all-pills{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
 .pills-tech{
   background-color: var(--pill-bg);
   display: inline;
