@@ -823,6 +823,7 @@ a{
 }
 .card-btn{
   display: flex;
+  justify-content: flex-end;
   gap: 15px;
   margin-top: 20px;
 }
@@ -1663,4 +1664,53 @@ font-size:2rem;
 
 }
 
+}
+
+
+.scroll-indicator{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
+    position: relative;
+    bottom: -60px;
+   
+}
+
+.mouse-e{
+    width:35px;
+    height:60px;
+    border:2px solid #fff;
+    border-radius:30px;
+    position:relative;
+}
+
+.wheel{
+    width:6px;
+    height:12px;
+    background:#ff8c00;
+    border-radius:10px;
+    position:absolute;
+    left:50%;
+    top:10px;
+    transform:translateX(-50%);
+    animation:scroll 1.5s infinite;
+}
+
+.scroll-indicator p{
+    color:#aaa;
+    font-size:14px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+@keyframes scroll{
+    0%{
+        opacity:1;
+        top:10px;
+    }
+    100%{
+        opacity:0;
+        top:35px;
+    }
 }
