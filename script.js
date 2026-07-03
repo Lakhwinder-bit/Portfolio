@@ -126,7 +126,7 @@ hoverEls.forEach(function(el) {
    COPY EMAIL
 ══════════════════════════════════ */
 document.getElementById('copyBtn').addEventListener('click', function() {
-  navigator.clipboard.writeText('bousrih20@gmail.com');
+  navigator.clipboard.writeText('singhlakhiwinder3@gmail.com');
   var btn = document.getElementById('copyBtn');
   btn.textContent = '✓';
   btn.style.color = '#3ddc84';
